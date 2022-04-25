@@ -15,11 +15,7 @@ class Pasangan(models.Model):
     special_name = models.CharField(max_length=32)
     avatar = models.URLField()
     kencan_terakhir = models.DateField()
-    status_pasangan = models.ForeignKey(
-            StatusPasangan, 
-            on_delete=models.CASCADE,
-            verbose_name='Relasi ke tabel StatusPasangan'
-    )
+    status_pasangan = models.IntegerField()
 
     def __str__(self):
         return '%s %s' % (self.first_name, self.last_name)

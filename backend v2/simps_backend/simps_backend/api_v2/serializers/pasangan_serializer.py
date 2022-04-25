@@ -12,6 +12,8 @@ class PasanganSerialiazer(serializers.ModelSerializer):
 
 
 class PasanganCreateUpdateSerializer(serializers.ModelSerializer):
+    status_pasangan = serializers.IntegerField()
+    avatar = serializers.URLField(read_only=True)
     class Meta:
         model = Pasangan
         fields = '__all__'

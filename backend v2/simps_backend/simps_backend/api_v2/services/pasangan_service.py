@@ -17,7 +17,7 @@ def getPasanganById(pasangan_id):
 def createPasangan(data):
     sql = open(SQLSCRIPTS_FOLDER+'/pasangan_scripts/createPasangan.sql')
     data = list(data.values())
-
+    print(data)
     with connection.cursor() as cursor:
         cursor.execute(sql.read(), data)
         cursor.fetchone()

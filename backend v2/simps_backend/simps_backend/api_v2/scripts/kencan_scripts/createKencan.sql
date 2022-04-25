@@ -1,0 +1,20 @@
+INSERT INTO api_v2_kencan
+  (
+    keterangan,
+    tanggal,
+    jam,
+    tempat,
+    pasangan,
+    biaya,
+    status_kencan
+  )
+VALUES
+  (
+    %s, 
+    NOW(),
+    NOW(),
+    %s,
+    %s, 
+    %s,
+    %s,
+  );
