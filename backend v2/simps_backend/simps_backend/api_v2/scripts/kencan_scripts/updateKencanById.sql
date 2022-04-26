@@ -1,4 +1,4 @@
-UPDATE  api_v2_Kencan
+UPDATE  api_v2_kencan
 
 SET
     keterangan = %s,

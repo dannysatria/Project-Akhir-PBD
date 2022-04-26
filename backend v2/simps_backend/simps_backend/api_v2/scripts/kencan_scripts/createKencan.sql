@@ -11,8 +11,8 @@ INSERT INTO api_v2_kencan
 VALUES
   (
     %s, 
-    NOW(),
-    NOW(),
+    %s,
+    %s,
     %s,
     %s, 
     %s,
